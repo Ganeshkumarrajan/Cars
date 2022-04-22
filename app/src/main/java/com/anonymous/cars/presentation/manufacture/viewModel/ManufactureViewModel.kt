@@ -58,5 +58,4 @@ class ManufactureViewModel(
     private fun onError(errorEntity: ErrorEntity) {
         _manufacturesUIModels.value = UIState.Error(errorUseCase.getErrorMessage(errorEntity))
     }
-
 }
